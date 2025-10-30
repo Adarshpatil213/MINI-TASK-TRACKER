@@ -1,0 +1,197 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4f8cff, #6fc7f8);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* Form and filters */
+form, .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  flex-grow: 1;
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+  border-color: #4f8cff;
+  box-shadow: 0 0 5px rgba(79, 140, 255, 0.5);
+}
+
+button {
+  background: #4f8cff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #357ae8;
+}
+
+/* Task cards */
+.task-card {
+  background: #f9f9f9;
+  border-left: 6px solid #ccc;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Status badges */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.status-badge.pending {
+  background-color: #e74c3c;
+}
+
+.status-badge.progress {
+  background-color: #3498db;
+}
+
+.status-badge.completed {
+  background-color: #27ae60;
+}
+
+/* Task header */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Task details */
+.meta {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.desc {
+  margin: 8px 0;
+  color: #444;
+}
+
+/* Buttons inside cards */
+.task-actions {
+  margin-top: 10px;
+}
+
+.task-actions button {
+  margin-right: 8px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #f1c40f;
+  color: #222;
+}
+
+.edit-btn:hover {
+  background-color: #d4ac0d;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Insights */
+.insight-box {
+  margin-top: 30px;
+  background: #eef5ff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.insight-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.insight-item {
+  margin: 6px 0;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.empty {
+  text-align: center;
+  color: #555;
+  margin-top: 20px;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
