@@ -1,12 +1,12 @@
-```markdown
-# 🧠 Task Manager API (FastAPI + SQLite)
+
+🧠 Task Manager API (FastAPI + SQLite)
 
 A simple yet powerful **Task Management System** built with **FastAPI** (Python) and **SQLite**, featuring a clean API backend and an interactive frontend.  
 You can add, update, delete, and filter tasks — and even get insights on productivity trends!
 
 ---
 
-## 🚀 Features
+🚀 Features
 
 ✅ **FastAPI Backend**  
 ✅ **SQLite Database (via SQLAlchemy ORM)**  
@@ -181,8 +181,12 @@ Adarsh Patil
 
 This project is released under the **MIT License** — free for personal and educational use.
 
+---
+
+## Watch Demo Video
+
+**[Link](https://drive.google.com/file/d/1xLhQ8Zpnxhj6Q1rGazHHRFMHTqwh8UKB/view?usp=sharing)**
+
 ```
 
 ---
-
-```
